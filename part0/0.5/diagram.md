@@ -20,8 +20,8 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
-    js uses the data to render the notes in the page
-    deactivate server
+    browser → browser: JavaScript processes JSON
+    browser → browser: DOM gets updated
 
     
 ```
